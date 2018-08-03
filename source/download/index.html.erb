@@ -1,0 +1,119 @@
+<style type="text/css">
+
+.container, h1, h2, ul, li {
+    font-family: 'Open Sans', sans-serif !important;
+}
+#requirements-table {
+    margin-top: 20px;
+}
+#requirements-table, #requirements-table th, #requirements-table td {
+    border: 1px solid #666;
+    padding: 10px;
+}
+#requirements-table th {
+    background-color: #ccc;
+}
+
+
+</style>
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <h1>oVirt Deployment Options</h1>
+            <p>The preferred way to install oVirt is by using your operating system's package manager.</p>
+            <p>This page details a traditional setup where the engine and hosts are installed separately. You
+                can also install a <a href="/documentation/how-to/hosted-engine/">Self-Hosted Engine setup using Cockpit.</a></p>
+            <p>See the <a href="/documentation/quickstart/quickstart-guide/">Quickstart Guide</a> for full documentation
+                on installing oVirt, setting up the engine and hosts, configuring storage and networking, and creating virtual machines.</p>
+        </div>
+    </row>
+    <div class="row">
+        <div class="col-xs-12">
+            <h1>oVirt Engine System Requirements</h1>
+            <table id="requirements-table" class="col-xs-10 col-xs-offset-1">
+                <colgroup>
+                    <col style="width: 33%;"/>
+                    <col style="width: 33%;"/>
+                    <col style="width: 33%;/"
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>Resource</th>
+                        <th>Minimum</th>
+                        <th>Recommended</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>CPU</td>
+                        <td>A dual core CPU.</td>
+                        <td>A quad core CPU or multiple dual core CPUs.</td>
+                    </tr>
+                    <tr>
+                        <td>Memory</td>
+                        <td>4 GB of available system RAM if Data Warehouse is not installed and if memory is not being consumed by existing processes.</td>
+                        <td>16 GB of system RAM.</td>
+                    </tr>
+                    <tr>
+                        <td>Hard Disk</td>
+                        <td>25 GB of locally accessible, writable disk space.</td>
+                        <td>50 GB of locally accessible, writable disk space.</td>
+                    </tr>
+                    <tr>
+                        <td>Network Interface</td>
+                        <td>1 Network Interface Card (NIC) with bandwidth of at least 1 Gbps.</td>
+                        <td>1 Network Interface Card (NIC) with bandwidth of at least 1 Gbps.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <h2>Supported Operating Systems</h2>
+            <p>
+                <ul>
+                    <li>CentOS Linux 7.5</li>
+                    <li>Red Hat Enterprise Linux 7.5</li>
+                    <li>Scientific Linux 7.5</li>
+                </ul>
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <h1>Recommended browsers for the oVirt web UI</h1>
+            <p>oVirt follows the <a href="https://access.redhat.com/help/browsers/">Red Hat Customer Portal Browser Support Policy</a>.
+                We recommend using the latest version of the following browsers:
+                <ul>
+                    <li>Firefox</li>
+                    <li>Chrome</li>
+                    <li>Safari</li>
+                    <li>Edge</li>
+                </ul>
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <h1>Install oVirt using package manager</h1>
+            <p><strong>oVirt 4.2</strong> is intended for production use and is available for the following platforms:
+                <ul>
+                    <li>Red Hat Enterprise Linux 7.5 or later</li>
+                    <li>CentOS Linux 7.5 or later</li>
+                    <li>Scientific Linux 7.5 or later</li>
+                </ul>
+            </p>
+            <p>
+                Be sure to read the <a href="/release/4.2.5/">Release Notes for oVirt 4.2.5.</a>
+            </p>
+            <p>
+                <div class="highlight">
+                    <pre class="highlight plaintext"><code># yum install https://resources.ovirt.org/pub/yum-repo/ovirt-release42.rpm</code></pre>
+                </div>
+            </p>
+        </div>
+    </div>
+
+</div>
